@@ -1,4 +1,4 @@
-﻿<!DOCKTYPE html>
+﻿<!DOCKTYPE html> <!-- typo in this tag. delete k -->
 
 <html lang="en">
 	<head>
@@ -8,33 +8,38 @@
 	<body>
 		<!-- Note the script tag here as well as the "text/javascript" -->
 		<script type="text/javascript">
-		
-			var vWeight=0;
-			var vHeight=0;
-			var vBmi=0;
+			// use tier indentation & spacing to improve code reading
+			var vWeight = 0;
+			var vHeight = 0;
+			var vBmi = 0;
 
 		function bmi(vWeight, vHeight) {
-			var vBmi=vWeight/((vHeight/100)**2);
+			var vBmi = vWeight / ((vHeight/100)**2);
 			return vBmi;
 		}
-			
-		console.log("Homework 2: BMI Calculation");
+		// as the way this console.log is, it behaves like a title
+		console.log ("Homework 2: BMI Calculation");
 		
 		// <p style="color: blue; font-size:20px;">Test 1!</p>
-			console.log(bmi(65,160));
-			console.log(vBmi);
+		
+		// this appears to log the functon bmi with 2 arguments
+		console.log(bmi(65,160));
+
+		// this appears to log the result of bmi function as vBmi
+		console.log(vBmi);
 		
 		// <p style="color: blue; font-size:20px;">BMI= bmi(65,160)</p>;
 
-			if vBmi < 18.5 {
-				console.log("過輕");
-			}
-			else if vBmi > 24 {
-				console.log("過重");
-			}
-			else {
-				console.log("正常");
-			}
+		// this is conditional output dependent on vBmi's value
+		if vBmi < 18.5 {
+			console.log("過輕");
+		}
+		else if vBmi > 24 {
+			console.log("過重");
+		}
+		else {
+			console.log("正常");
+		}
 
 		// Note the end tag for script
 		</script>

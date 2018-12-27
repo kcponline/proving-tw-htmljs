@@ -1,6 +1,6 @@
 ﻿<!DOCKTYPE html>
 
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>"4.1 HW-2"</title>		
@@ -9,6 +9,9 @@
 			var vBmi=0;
 	</head>
 	<body>
+		<!-- Note the script tag here as well as the "text/javascript" -->
+		<script type="text/javascript">
+
 		function bmi(vWeight, vHeight) {
 			var vBmi=vWeight/((vHeight/100)**2);
 			return vBmi;
@@ -16,11 +19,11 @@
 			
 		console.log("Homework 2: BMI Calculation");
 		
-		<p style="color: blue; font-size:20px;">Test 1!</p>
+		// <p style="color: blue; font-size:20px;">Test 1!</p>
 			console.log(bmi(65,160));
 			console.log(vBmi);
 		
-		<p style="color: blue; font-size:20px;">BMI= bmi(65,160)</p>;
+		// <p style="color: blue; font-size:20px;">BMI= bmi(65,160)</p>;
 
 			if vBmi < 18.5 {
 				console.log("過輕");
@@ -31,6 +34,9 @@
 			else {
 				console.log("正常");
 			}
+
+		// Note the end tag for script
+		</script>
 
 	</body>
 
